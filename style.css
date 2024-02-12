@@ -353,6 +353,7 @@ footer .end span {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20ch;
 }
 
 .library-card-form h2 {
@@ -376,7 +377,7 @@ footer .end span {
 }
 
 .library-card-form input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #089da1;
     color: white;
     padding: 14px 20px;
     margin-top: 10px;
@@ -388,5 +389,5 @@ footer .end span {
 }
 
 .library-card-form input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #089da1;
 }
