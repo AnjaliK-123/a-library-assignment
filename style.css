@@ -6,11 +6,19 @@
 
 }
 
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+
 section {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
+
 }
 
 
@@ -20,8 +28,8 @@ section nav {
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 0 10px #089da1;
-    background: #fff;
-    position: fixed;
+    background: #ffffff;
+    position: relative;
     left: 0;
     z-index: 100;
     margin-bottom: 30px !important;
@@ -133,38 +141,60 @@ section .main .centered {
     font-size: 5ch;
 }
 
-.search {
-    width: 100%;
-    position: relative;
+section .main_img img {
     display: flex;
+    width: 30%;
+    margin-left: 65px;
+}
+
+.search {
+    width: 30%;
+    position: relative;
+
 }
 
 .searchTerm {
-    width: 40%;
-    margin-left: 28%;
-    border: 3px solid #00B4CC;
-    border-right: none;
+    width: 100%;
+    border: 3px solid #089da1;
     padding: 5px;
-    height: 20px;
+    height: 36px;
     border-radius: 5px 0 0 5px;
-    outline: none;
-    color: #9DBFAF;
+    margin-left: 65vh;
+
 }
 
 .searchTerm:focus {
-    color: #00B4CC;
+    color: #089da1;
 }
 
 .searchButton {
     width: 40px;
     height: 36px;
-    border: 1px solid #00B4CC;
-    background: #00B4CC;
+    border: 1px solid #089da1;
+    background: #089da1;
     text-align: center;
     color: #fff;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
+}
+
+.wrap {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*About Us*/
+.AboutUs {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.AboutUs p {
+    color: #089da1;
 }
 
 /*news*/
@@ -390,4 +420,161 @@ footer .end span {
 
 .library-card-form input[type="submit"]:hover {
     background-color: #089da1;
+}
+
+.thriller_books {
+    width: 100%;
+    height: 100%;
+    padding: 70px 0;
+}
+
+.thriller_books h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.thriller_books .thriller_book_box {
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.thriller_books .thriller_book_box .thriller_book_card {
+    width: 250px;
+    height: 480px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.thriller_books .thriller_book_box .thriller_book_card:hover {
+    box-shadow: 0 0 5px #089da1;
+}
+
+
+.thriller_books .thriller_book_box .thriller_book_card .thriller_book_img img {
+    width: 150px;
+    height: 210px;
+}
+
+.thriller_books .thriller_book_box .thriller_book_card .thriller_book_tag h1 {
+    margin: 12px;
+    top: 20vh;
+    position: relative;
+    color: #089da1;
+}
+
+.thriller_books .thriller_book_box .thriller_book_card .thriller_book_tag h2 {
+    margin: 12px;
+    color: #089da1;
+}
+
+.thriller_books .thriller_book_box .thriller_book_card .thriller_book_tag .writer {
+    color: #919191;
+}
+
+.thriller_books .thriller_book_box .thriller_book_card .thriller_book_tag .description {
+    color: black;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.thriller_books .thriller_book_box .thriller_book_card .thriller_book_tag .f_btn {
+    padding: 8px 20px;
+    border: 2px solid #089da1;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Book information */
+.container {
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    /* Vertically center items */
+}
+
+.image {
+    flex: 0 0 auto;
+    /* Flex item won't grow or shrink */
+    margin-right: 20px;
+    margin-left: 55px;
+    /* Adjust spacing between image and description */
+}
+
+.image img {
+    max-width: 500px;
+    margin-bottom: 25px;
+    /* Ensure image doesn't exceed its container */
+}
+
+
+.desc {
+    flex: auto;
+    width: 150px;
+    height: 400px;
+    text-align: justify;
+    padding: 5px;
+    border: 1px solid #089da1;
+    margin: auto 20px;
+    box-shadow: 0 0 5px #089da1;
+
+    /* Allow description to grow and take remaining space */
+}
+
+.desc1 {
+    text-align: center;
+    color: #089da1;
+}
+
+
+.container button {
+    padding: 7px 15px;
+    background: #089da1;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.search_home {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm_home {
+    width: 30%;
+    margin-left: 28%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm_home:focus {
+    color: #089da1;
+}
+
+.searchButton_home {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #089da1;
+    background: #089da1;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
 }
